@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Registration Form</title>
+    <link rel="stylesheet" href="style-form.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <fieldset>
+                <legend>🏋️ Gym Registration Form</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" minlength="5" maxlength="15" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="90" required>
+
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+                <label for="weight">Body Weight (kg):</label>
+                <input type="number" id="weight" name="body_weight" placeholder="Enter your weight">
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" placeholder="Enter your height">
+
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+
+                <label for="country">Country:</label>
+                <select name="country" id="country" required>
+                    <optgroup label="Asia">
+                        <option value="india">India</option>
+                        <option value="sri_lanka">Sri Lanka</option>
+                        <option value="australia">Australia</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="russia">Russia</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="portugal">Portugal</option>
+                        <option value="spain">Spain</option>
+                        <option value="france">France</option>
+                        <option value="sweden">Sweden</option>
+                        <option value="germany">Germany</option>
+                    </optgroup>
+                </select>
+
+                <label>Weight Goal:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="weight_goal[]" value="increase"> Increase</label>
+                    <label><input type="checkbox" name="weight_goal[]" value="decrease"> Decrease</label>
+                </div>
+
+                <label>Muscle Goal:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="muscle_goal[]" value="gain"> Gain</label>
+                    <label><input type="checkbox" name="muscle_goal[]" value="loss"> Loss</label>
+                </div>
+
+                <label for="image">Your Current Image:</label>
+                <input type="file" name="image" id="image" accept="image/*">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gym_time">Preferred Gym Time:</label>
+                <input type="time" id="gym_time" name="gym_time">
+
+                <div class="form-buttons">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
