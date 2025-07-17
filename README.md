@@ -22,6 +22,10 @@ Edit
 - Clean UI with modern design
 - Favicon support for multiple devices
 
+ 🔗 Live Demo
+
+🌐 [cheery-fairy-61bb8e.netlify.app](https://cheery-fairy-61bb8e.netlify.app)
+
 ## 🛠️ Technologies Used
 
 - HTML5  
